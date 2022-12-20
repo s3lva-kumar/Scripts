@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
   git --version &> /dev/null
   if [[ $? -eq 0 ]]; then
-    git already installed
+    echo "git already installed"
 
   elif [[ has_apt_get ]]; then
     sudo add-apt-repository ppa:git-core/ppa && sudo apt update
